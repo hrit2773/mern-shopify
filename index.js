@@ -55,7 +55,7 @@ app.post('/forgot-password', async (req, res) => {
       from: 'shopify@gmail.com',
       to: email,
       subject: 'Shopify password Reset',
-      text: `Click the following link to reset your password: http://shopify-hrit.vercel.app/reset-password/${resetToken}. This link will expire in 1 hour.`,
+      text: `Click the following link to reset your password: http://myshopify.vercel.app/reset-password/${resetToken}. This link will expire in 1 hour.`,
     };
 
     transporter.sendMail(mailOptions, (error, info) => {
